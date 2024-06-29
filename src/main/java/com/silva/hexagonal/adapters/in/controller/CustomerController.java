@@ -1,5 +1,7 @@
 package com.silva.hexagonal.adapters.in.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,9 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.silva.hexagonal.adapters.in.controller.mapper.CustomerMapper;
 import com.silva.hexagonal.adapters.in.controller.request.CustomerRequest;
 import com.silva.hexagonal.application.ports.in.InsertCustomerInputPort;
-
-import jakarta.validation.Valid;
-
 
 @RestController
 @RequestMapping("/api/v1/customers")

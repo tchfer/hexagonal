@@ -1,9 +1,10 @@
 package com.silva.hexagonal.adapters.in.controller.request;
 
-import jakarta.validation.constraints.NotBlank;
-//import lombok.Data;
+import javax.validation.constraints.NotBlank;
 
-//@Data
+import lombok.Data;
+
+@Data
 public class CustomerRequest {
 
 	@NotBlank
@@ -14,7 +15,7 @@ public class CustomerRequest {
 	
 	@NotBlank
 	private String zipCode;
-
+	
 	public String getName() {
 		return name;
 	}
